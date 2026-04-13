@@ -8,18 +8,24 @@ export default function Home() {
             Bean There
           </h1>
           <p className="text-2xl md:text-4xl font-light italic">
-            Life&apos;s too short for bad coffee
+            Premium Roasts, Perfect Mornings
           </p>
+          <a
+            href="#menu"
+            className="inline-block mt-8 px-8 py-4 bg-white text-[#6F4E37] font-bold text-lg rounded-lg hover:bg-[#F5EBE0] transition-colors shadow-lg"
+          >
+            Order Online
+          </a>
         </div>
       </section>
 
       {/* Menu Section */}
-      <section className="py-20 px-4">
+      <section id="menu" className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-5xl font-bold text-center mb-16 text-[#6F4E37]">
             Our Menu
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
               <div className="text-6xl mb-4">☕</div>
               <h3 className="text-2xl font-bold text-[#6F4E37] mb-2">
@@ -43,7 +49,7 @@ export default function Home() {
             </div>
 
             <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-              <div className="text-6xl mb-4">🧊</div>
+              <div className="text-6xl mb-4">🇊</div>
               <h3 className="text-2xl font-bold text-[#6F4E37] mb-2">
                 Cold Brew
               </h3>
@@ -51,6 +57,17 @@ export default function Home() {
                 Smooth, refreshing, perfectly chilled
               </p>
               <p className="text-3xl font-bold text-[#8B6F47]">$5.50</p>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+              <div className="text-6xl mb-4">🍫🍼</div>
+              <h3 className="text-2xl font-bold text-[#6F4E37] mb-2">
+                Matcha Latte
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Smooth green tea with creamy milk
+              </p>
+              <p className="text-3xl font-bold text-[#8B6F47]">$6</p>
             </div>
           </div>
         </div>
@@ -82,7 +99,7 @@ export default function Home() {
           <p className="text-xl mb-2">Bean There Coffee Shop</p>
           <p className="text-lg text-[#F5EBE0]">123 Brew St, Portland OR</p>
           <div className="mt-8 text-sm text-[#F5EBE0]">
-            © 2026 Bean There. Life&apos;s too short for bad coffee.
+            © 2026 Bean There. Premium Roasts, Perfect Mornings.
           </div>
         </div>
       </footer>
